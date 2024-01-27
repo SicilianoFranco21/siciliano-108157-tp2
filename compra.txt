@@ -1,0 +1,3 @@
+producto    cantidad
+leche    2
+queso    150
