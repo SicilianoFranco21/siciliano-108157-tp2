@@ -2,8 +2,8 @@
 #define __MENU_HPP__
 
 
-#include <iostream>
-#include <string>
+#include "./gondola.hpp"
+#include "./chango.hpp"
 
 
 class Menu {
