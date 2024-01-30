@@ -12,4 +12,4 @@ clean:
 	rm -f *.o
 
 cleanAll:
-	rm -f $(NAME) *.o
+	rm -f  $(NAME) *.o

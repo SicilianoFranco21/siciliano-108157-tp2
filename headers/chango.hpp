@@ -3,14 +3,15 @@
 #define __CHANGO_HPP__
 
 
+#include <fstream>
 #include "./vector.hpp"
-const std::string RUTA_ARCHIVO_COMPRAS = "../tests/compra.txt";
+const std::string RUTA_ARCHIVO_COMPRAS = "../tests/test_compra.txt";
 
 
 class Chango {
     private:
         Vector vector_chango;
-        size_t capacidad_actual_almacenamiento;
+        size_t cantidad_productos_chango;
 
     public:
         // PRE:
@@ -19,7 +20,7 @@ class Chango {
 
         // PRE:
         // POST:
-        void agregar_producto();
+        void agregar_producto(Producto *producto);
 
         // PRE:
         // POST:
@@ -32,6 +33,10 @@ class Chango {
         // PRE:
         // POST:
         void guardar_productos_chango(std::string ruta_archivo);
+        
+        // PRE:
+        // POST:
+        size_t consultar_cantidad_productos();
 };
 
 

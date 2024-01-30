@@ -3,14 +3,15 @@
 #define __GONDOLA_HPP__
 
 
+#include <fstream>
 #include "./vector.hpp"
-const std::string RUTA_ARCHIVO_PRODUCTOS = "../tests/productos.txt";
+const std::string RUTA_ARCHIVO_PRODUCTOS = "../tests/test_productos.txt";
 
 
 class Gondola {
     private:
         Vector vector_gondola;
-        size_t capacidad_actual_almacenamiento;
+        size_t cantidad_productos_gondola;
 
     public:
         // PRE:
@@ -19,7 +20,7 @@ class Gondola {
 
         // PRE:
         // POST:
-        void agregar_producto();
+        void agregar_producto(Producto *producto);
 
         // PRE:
         // POST:
@@ -28,6 +29,10 @@ class Gondola {
         // PRE:
         // POST:
         void guardar_productos_gondola(std::string ruta_archivo);
+
+        // PRE:
+        // POST:
+        size_t consultar_cantidad_productos();
 };
 
 
