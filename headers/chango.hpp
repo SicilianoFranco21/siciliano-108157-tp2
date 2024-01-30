@@ -4,7 +4,7 @@
 
 
 #include "./vector.hpp"
-
+const std::string RUTA_ARCHIVO_COMPRAS = "../tests/compra.txt";
 
 
 class Chango {

@@ -1,10 +1,10 @@
 // Basado en el archivo compra.txt
 #ifndef __GONDOLA_HPP__
-#define __CHANGO_HPP__
+#define __GONDOLA_HPP__
 
 
 #include "./vector.hpp"
-
+const std::string RUTA_ARCHIVO_PRODUCTOS = "../tests/productos.txt";
 
 
 class Gondola {
