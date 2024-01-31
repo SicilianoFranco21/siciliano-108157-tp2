@@ -33,3 +33,13 @@ void Gondola::guardar_productos_gondola(std::string ruta_archivo) {
 size_t Gondola::consultar_cantidad_productos() {
     return this->cantidad_productos_gondola;
 }
+
+
+void Gondola::actualizar_stock(const std::string nombre_producto, int cantidad_producto_comprado) {
+    for (size_t i = 0; i < cantidad_productos_gondola; i++) {
+        if (nombre_producto == vector_gondola[i]->consultar_nombre_producto()) {
+            this->vector_gondola[i]->stock -= cantidad_producto_comprado;
+            return;
+        }
+    }
+}

@@ -13,6 +13,7 @@ int main() {
     Chango chango;
     Gondola gondola;
     Lector::procesar_archivo_gondola(&gondola, RUTA_ARCHIVO_PRODUCTOS);
+    Lector::procesar_archivo_chango(&chango, RUTA_ARCHIVO_COMPRAS, &gondola);
     Menu::ejecutarMenuPrincipal(chango, gondola);
     Lector::agregar_productos_gondola(&gondola, RUTA_ARCHIVO_PRODUCTOS);
 /*

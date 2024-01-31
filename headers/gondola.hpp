@@ -32,6 +32,10 @@ class Gondola {
 
         // PRE:
         // POST:
+        void actualizar_stock(const std::string nombre_producto, int cantidad_producto_comprado);
+
+        // PRE:
+        // POST:
         size_t consultar_cantidad_productos();
 };
 
