@@ -4,6 +4,7 @@
 
 #include "./gondola.hpp"
 #include "./chango.hpp"
+#include "./usuario.hpp"
 
 
 class Menu {
@@ -22,7 +23,7 @@ class Menu {
 
         // PRE :
         // POST:
-        static void ejecutarMenuPrincipal();
+        static void ejecutarMenuPrincipal(Chango &chango, Gondola &gondola);
 };
 
 

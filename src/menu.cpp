@@ -37,7 +37,7 @@ void Menu::ingresarOpcion(std::string& opcion, std::string mensaje) {
 }
 
 
-void Menu::ejecutarMenuPrincipal() {
+void Menu::ejecutarMenuPrincipal(Chango &chango, Gondola &gondola) {
     
     mostrarMenuOpciones();
 
@@ -47,16 +47,17 @@ void Menu::ejecutarMenuPrincipal() {
 
     while (opcion != "5") {
         if (opcion == "1") {
-            
+            Producto* nuevo_producto = Usuario::ingresar_producto();
+            chango.agregar_producto(nuevo_producto);
         }
         else if (opcion == "2") {
-
+            chango.quitar_producto();
         }
         else if (opcion == "3") {
-
+            chango.mostrar_productos_chango();
         }
         else if (opcion == "4") {
-
+            gondola.mostrar_productos_gondola();
         }
         else {
             std::cout << "(>_<) NO ha ingresado una opcion valida!!! (>_<)" << std::endl;

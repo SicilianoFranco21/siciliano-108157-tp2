@@ -1,7 +1,6 @@
 #include <iostream>
 #include <fstream>
-#include "../headers/chango.hpp"
-#include "../headers/gondola.hpp"
+#include "../headers/menu.hpp"
 
 
 using namespace std;
@@ -12,6 +11,8 @@ const unsigned int MAXIMO = 100000000;
 int main() {
     Chango chango;
     Gondola gondola;
+    Menu::ejecutarMenuPrincipal(chango, gondola);
+/*
     Producto producto("Carne", 2000, 1, 10);
     Producto producto1("Pollo", 1500, 1, 15);
     Producto producto2("Cerdo", 2200, 1, 12);
@@ -24,7 +25,8 @@ int main() {
     gondola.agregar_producto(&producto3);
     gondola.agregar_producto(&producto4);
     gondola.agregar_producto(&producto5);
-    gondola.mostrar_productos_gondola();
-    cout << endl;
+    gondola.mostrar_productos_gondola(); 
+*/
+    cout << "Programa ejecutado exitosamente" << endl;
     return 0;
 }
