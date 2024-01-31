@@ -10,10 +10,10 @@
 
 class Lector {
     public:
-        static void agregar_producto_gondola(const std::string &archivo_gondola, Vector &vector_gondola);
+        static void agregar_productos_gondola(Gondola *vector_gondola, std::string &ruta_archivo_gondola);
         static void procesar_archivo_gondola(Gondola *vector_gondola, std::string &ruta_archivo_gondola);
-        static void agregar_producto_chango(const std::string &archivo_chango, Vector &vector_chango);
-        static void procesar_archivo_chango(Gondola *vector_chango, std::string &ruta_archivo_chango);
+        static void agregar_productos_chango(Chango *vector_chango, std::string &ruta_archivo_chango);
+        static void procesar_archivo_chango(Chango *vector_chango, std::string &ruta_archivo_chango);
 
 };
 
