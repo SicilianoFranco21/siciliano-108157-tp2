@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include "../headers/menu.hpp"
+#include "../headers/lector.hpp"
 
 
 using namespace std;
@@ -11,6 +12,7 @@ const unsigned int MAXIMO = 100000000;
 int main() {
     Chango chango;
     Gondola gondola;
+    Lector::procesar_archivo_gondola(&gondola, RUTA_ARCHIVO_PRODUCTOS);
     Menu::ejecutarMenuPrincipal(chango, gondola);
 /*
     Producto producto("Carne", 2000, 1, 10);
