@@ -9,10 +9,10 @@ const std::string RUTA_ARCHIVO_PRODUCTOS = "../tests/test_productos.txt";
 
 
 class Gondola {
-    private:
+    public:
         Vector vector_gondola;
         size_t cantidad_productos_gondola;
-
+        friend class Vector;
     public:
         // PRE:
         // POST:

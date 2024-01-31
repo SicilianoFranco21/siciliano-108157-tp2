@@ -2,15 +2,19 @@
 
 
 void Lector::agregar_productos_gondola(Gondola *gondola, const std::string &ruta_archivo_gondola) {
-/*     std::ofstream archivo_salida(ruta_archivo_gondola);
+    std::ofstream archivo_salida(ruta_archivo_gondola);
     if (!archivo_salida.is_open()) {
         std::cerr << "No se pudo abrir el archivo 'productos.txt'" << std::endl;
         return;
     }
-
+    std::string header = "producto precio 0/1 stock";
+    archivo_salida << header << std::endl;
     for (size_t i = 0; i < gondola->consultar_cantidad_productos(); i++) {
-        archivo_salida << gondola.vector_gondola[i] << std::endl;
-    } */
+        archivo_salida << gondola->vector_gondola[i]->consultar_nombre_producto() << " ";
+        archivo_salida << gondola->vector_gondola[i]->consultar_precio_producto() << " ";
+        archivo_salida << gondola->vector_gondola[i]->consultar_oferta_producto() << " ";
+        archivo_salida << gondola->vector_gondola[i]->consultar_stock_producto() << std::endl;
+    }
 }
 
 

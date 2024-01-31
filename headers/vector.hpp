@@ -7,7 +7,7 @@
 
 
 class Vector {
-    private:
+    public: // private
         Producto** datos;
         size_t cantidadDatos;
         size_t tamanioMaximo;
@@ -15,7 +15,6 @@ class Vector {
         void aumentarCapacidadVector();
         void disminuirCapacidadVector();
         Vector& operator=(const Vector& otro);
-
     public:
         // Constructor.
         Vector();

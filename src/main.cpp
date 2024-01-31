@@ -14,6 +14,7 @@ int main() {
     Gondola gondola;
     Lector::procesar_archivo_gondola(&gondola, RUTA_ARCHIVO_PRODUCTOS);
     Menu::ejecutarMenuPrincipal(chango, gondola);
+    Lector::agregar_productos_gondola(&gondola, RUTA_ARCHIVO_PRODUCTOS);
 /*
     Producto producto("Carne", 2000, 1, 10);
     Producto producto1("Pollo", 1500, 1, 15);

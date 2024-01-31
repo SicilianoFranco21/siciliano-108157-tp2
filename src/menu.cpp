@@ -63,7 +63,11 @@ void Menu::ejecutarMenuPrincipal(Chango &chango, Gondola &gondola) {
         }
         else if (opcion == "5") {
             gondola.mostrar_productos_gondola();
-        }   
+        }
+        else if (opcion == "P") {
+            std::cout << "TESTING" << std::endl;
+            
+        }
         else {
             std::cout << "(>_<) NO ha ingresado una opcion valida!!! (>_<)" << std::endl;
             

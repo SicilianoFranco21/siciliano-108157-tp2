@@ -6,7 +6,7 @@
 
 
 class Producto {
-    private:
+    public: //private
         std::string nombre_producto;
         double precio_producto;
         int oferta;
