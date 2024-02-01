@@ -1,4 +1,0 @@
-producto cantidad
-leche 2
-queso 150
-arroz 10

@@ -53,7 +53,17 @@ void Lector::procesar_archivo_gondola(Gondola *gondola, const std::string &ruta_
 
 
 void Lector::agregar_productos_chango(Chango *chango, const std::string &ruta_archivo_chango) {
-
+    std::ofstream archivo_salida(ruta_archivo_chango);
+    if (!archivo_salida.is_open()) {
+        std::cerr << "No se pudo abrir el archivo 'productos.txt'" << std::endl;
+        return;
+    }
+    std::string header = "producto cantidad";
+    archivo_salida << header << std::endl;
+    for (size_t i = 0; i < chango->consultar_cantidad_productos(); i++) {
+        archivo_salida << chango->vector_chango[i]->consultar_nombre_producto() << " ";
+        archivo_salida << chango->vector_chango[i]->consultar_stock_producto() << std::endl;
+    }
 }
 
 

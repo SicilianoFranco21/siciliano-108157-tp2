@@ -16,6 +16,7 @@ int main() {
     Lector::procesar_archivo_chango(&chango, RUTA_ARCHIVO_COMPRAS, &gondola);
     Menu::ejecutarMenuPrincipal(chango, gondola);
     Lector::agregar_productos_gondola(&gondola, RUTA_ARCHIVO_PRODUCTOS);
+    Lector::agregar_productos_chango(&chango, RUTA_ARCHIVO_COMPRAS);
 /*
     Producto producto("Carne", 2000, 1, 10);
     Producto producto1("Pollo", 1500, 1, 15);
